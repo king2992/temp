@@ -1,6 +1,5 @@
 $(document).ready(function(){
     if(!getCookie("hideBannerForToday")) {
-        hideBannerForToday();
         var modal = $('#bannerModal');
         modal.show();
 
@@ -36,8 +35,6 @@ function hideBannerForToday() {
     setCookie("hideBannerForToday", true, 1); // 쿠키를 1일 동안 저장
     var modal = document.getElementById('bannerModal');
     modal.style.display = "none";
-    // window.location.href = "https://link.coupang.com/a/8IPpw";
-    window.open('https://link.coupang.com/a/8IPpw', '_blank');
 
 }
 
