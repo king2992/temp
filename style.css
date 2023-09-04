@@ -9579,8 +9579,7 @@ img.zoom-effect:hover {
 
 .modal-content {
     margin: 15% auto;
-    padding: 20px;
-    width: 80%;
+    width: 70%;
     max-width: 750px; /* 이미지 너비에 맞게 조절 */
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
