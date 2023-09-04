@@ -7095,7 +7095,11 @@ html {
 }
 
 body {
-    background: #ddd
+    /* background: #ddd */
+}
+
+ul, li{
+    list-style: none;
 }
 
 .hm-logo {
@@ -9488,4 +9492,81 @@ html.pum-open.pum-open-overlay-disabled.pum-open-scrollable .pum-overlay.pum-act
 .pika-single,
 body div#ui-datepicker-div[style] {
     z-index: 9999999999 !important
+}
+
+.site-content > article > ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.site-content > article> ul > li{
+    margin-bottom: 50px;
+}
+
+article {
+    position: relative;
+    margin-top : 10%;
+}
+
+aside{
+    position: absolute;
+    top:0;
+    right: 20%;
+    border: 1px solid #dae1e6;
+    border-radius: 3px;
+    width: 20%;
+    height: inherit;
+}
+
+.description{
+    font-weight: bold;
+    color : #e74c3c;
+}
+
+.issue{
+    font-size: 20px;
+    font-weight: bold;
+    color : #e74c3c;
+    padding: 20px;
+}
+
+aside > ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 0;
+    padding:0;
+}
+
+aside > ul > li{
+    margin-top: 50px;
+}
+
+a{
+    color : #e74c3c;
+}
+
+.rank{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+img.zoom-effect {
+    transition: transform 0.3s; /* 부드러운 확대 효과를 위한 transition */
+    cursor: pointer; /* 마우스 포인터가 이미지 위에 있을 때 손가락 모양으로 바뀝니다 */
+}
+
+img.zoom-effect:hover {
+    transform: scale(0.9); /* 마우스 오버 시 이미지를 1.1배 확대 */
+}
+
+@media screen and (max-width: 1470px) {
+    aside {
+        display: none;
+    }
 }
