@@ -1,5 +1,20 @@
 $(document).ready(function(){
     if(!getCookie("hideBannerForToday")) {
+        $('.close').hide();
+
+        // 카운트다운 시작
+        var counter = 5;
+        $('#count').text(counter);
+    
+        var countdown = setInterval(function() {
+            counter--;
+            $('#count').text(counter);
+            if (counter <= 0) {
+                clearInterval(countdown); // 카운트다운 종료
+                $('#count').hide();      // 카운트 숫자 숨기기
+                $('.close').show();      // "오늘 하루 보지 않기" 버튼 보이기
+            }
+        }, 1000);
         var modal = $('#bannerModal');
         modal.show();
 
